@@ -4,10 +4,136 @@
     android:background="@android:color/holo_green_light">
 
     <TextView
+        android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Complaint"
-        android:layout_centerInParent="true"
-        android:textSize="30sp"/>
+        android:textSize="30dp"
+        android:layout_marginLeft="10dp"
+        android:text="Complaint" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:gravity="center"
+
+        android:text="Recent Complaints"
+        android:textSize="20dp"/>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/button"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="#FFFFFF">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <TextView
+                    android:text="Blah blah blah   (...)"
+                    android:padding="20dip"
+                    android:textSize="20dip"/>
+                <TextView
+                    android:text="Pending"
+                    android:gravity="right"
+                    android:padding="20dip"
+                    android:textSize="15dip"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <TextView
+                    android:text="Another complaint   (...)"
+                    android:padding="20dip"
+                    android:textSize="20dip"/>
+                <TextView
+                    android:text="closed"
+                    android:gravity="right"
+                    android:padding="20dip"
+                    android:textSize="15dip"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <TextView
+                    android:text="Blah blah blah   (...)"
+                    android:padding="20dip"
+                    android:textSize="20dip"/>
+                <TextView
+                    android:text="Pending"
+                    android:gravity="right"
+                    android:padding="20dip"
+                    android:textSize="15dip"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <TextView
+                    android:text="Another complaint   (...)"
+                    android:padding="20dip"
+                    android:textSize="20dip"/>
+                <TextView
+                    android:text="closed"
+                    android:gravity="right"
+                    android:padding="20dip"
+                    android:textSize="15dip"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <TextView
+                    android:text="Blah blah blah   (...)"
+                    android:padding="20dip"
+                    android:textSize="20dip"/>
+                <TextView
+                    android:text="Pending"
+                    android:gravity="right"
+                    android:padding="20dip"
+                    android:textSize="15dip"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <TextView
+                    android:text="Another complaint   (...)"
+                    android:padding="20dip"
+                    android:textSize="20dip"/>
+                <TextView
+                    android:text="closed"
+                    android:gravity="right"
+                    android:padding="20dip"
+                    android:textSize="15dip"/>
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:text="New Complaint" />
 
 </RelativeLayout>

@@ -4,10 +4,181 @@
     android:background="@android:color/holo_blue_dark">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/textView"
+        android:layout_width="124dp"
         android:layout_height="wrap_content"
-        android:text="Books"
-        android:layout_centerInParent="true"
-        android:textSize="30sp"/>
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="166dp"
+        android:text="Book Search" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="100sp"
+
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="0sp"
+        android:layout_marginEnd="73dp"
+        android:layout_marginBottom="150dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText"
+        android:layout_marginTop="-131dp"
+        android:text="ToggleButton"
+        android:textOff="In Possesion"
+        android:textOn="Returned" />
+    <ScrollView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_below="@+id/toggleButton"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="1">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <TextView
+                    android:text="Calculus 4"
+                    android:padding="20dip"
+                    android:textSize="20dip"/>
+                <TextView
+                    android:text="Overdue"
+                    android:gravity="right"
+                    android:padding="20dip"
+                    android:textSize="15dip"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <TextView
+                    android:text="DIY"
+                    android:padding="20dip"
+                    android:textSize="20dip"/>
+                <TextView
+                    android:text="17/03/19"
+                    android:gravity="right"
+                    android:padding="20dip"
+                    android:textSize="15dip"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <TextView
+                    android:text="Calculus 4"
+                    android:padding="20dip"
+                    android:textSize="20dip"/>
+                <TextView
+                    android:text="Overdue"
+                    android:gravity="right"
+                    android:padding="20dip"
+                    android:textSize="15dip"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <TextView
+                    android:text="DIY"
+                    android:padding="20dip"
+                    android:textSize="20dip"/>
+                <TextView
+                    android:text="17/03/19"
+                    android:gravity="right"
+                    android:padding="20dip"
+                    android:textSize="15dip"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <TextView
+                    android:text="Calculus 4"
+                    android:padding="20dip"
+                    android:textSize="20dip"/>
+                <TextView
+                    android:text="Overdue"
+                    android:gravity="right"
+                    android:padding="20dip"
+                    android:textSize="15dip"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <TextView
+                    android:text="DIY"
+                    android:padding="20dip"
+                    android:textSize="20dip"/>
+                <TextView
+                    android:text="17/03/19"
+                    android:gravity="right"
+                    android:padding="20dip"
+                    android:textSize="15dip"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <TextView
+                    android:text="Calculus 4"
+                    android:padding="20dip"
+                    android:textSize="20dip"/>
+                <TextView
+                    android:text="Overdue"
+                    android:gravity="right"
+                    android:padding="20dip"
+                    android:textSize="15dip"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <TextView
+                    android:text="DIY"
+                    android:padding="20dip"
+                    android:textSize="20dip"/>
+                <TextView
+                    android:text="17/03/19"
+                    android:gravity="right"
+                    android:padding="20dip"
+                    android:textSize="15dip"/>
+            </TableRow>
+
+
+
+
+        </TableLayout>
+    </FrameLayout>
+    </ScrollView>
 
 </RelativeLayout>
